@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import UploadModal from './UploadModal';
+import UploadModal from './client/components/Modal/UploadModal';
 
 function App() {
   return <UploadModal />;
