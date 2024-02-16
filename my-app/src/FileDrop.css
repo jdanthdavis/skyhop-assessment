@@ -1,0 +1,26 @@
+.file-drop-container {
+    .elapsed-data-container {
+        display: flex;
+        flex-direction: column;
+        .dates {
+            color: green;
+        }
+    }
+
+    .tolerance-window {
+        .switch-label {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        .switch-container {
+            display: flex;
+            align-items: center;
+
+            .tolerance {
+                border-left: 2px solid darkblue;
+                padding-left: 1rem;
+            }
+        }
+    }
+}
