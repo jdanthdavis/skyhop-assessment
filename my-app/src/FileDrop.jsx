@@ -4,6 +4,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Dropzone from 'react-dropzone';
 import { CiClock1 } from 'react-icons/ci';
+import { FaFileAlt } from 'react-icons/fa';
 import Switch from '@mui/material/Switch';
 
 const FileDrop = ({ setUploadedFiles }) => {
@@ -31,11 +32,14 @@ const FileDrop = ({ setUploadedFiles }) => {
             <section className="dropzone-section">
               <div {...getRootProps({ className: 'dropzone' })}>
                 <input {...getInputProps()} />
+                <FaFileAlt size={25} color="orange" />
                 <p>Drag & Drop Here Or Browse</p>
               </div>
-              <button className="modal-btn" onClick={openBrowse}>
-                Upload Manifest
-              </button>
+              <div className="dropzone-btn-container">
+                <button className="modal-btn-dropzone" onClick={openBrowse}>
+                  Upload Manifest
+                </button>
+              </div>
             </section>
           )}
         </Dropzone>
@@ -65,8 +69,10 @@ const FileDrop = ({ setUploadedFiles }) => {
               label={isChecked ? 'Toggle ON' : 'Toggle OFF'}
             ></FormControlLabel>
           </FormGroup>
-          <div className="tolerance">Select Tolerance Level</div>
-          <CiClock1 size={23} />
+          <div className="tolerance-container">
+            <CiClock1 size={23} />
+            <div className="tolerance">Select Tolerance Level</div>
+          </div>
         </div>
       </div>
     </div>
