@@ -1,18 +1,34 @@
 .file-drop-container {
+    color: darkblue;
     .elapsed-data-container {
         display: flex;
         flex-direction: column;
         .dates {
             color: green;
+            padding-top: .5rem;
         }
     }
 
-    .tolerance-window {
-        .switch-label {
-            color: darkblue;
-            font-weight: bold;
-        }
 
+    .drop-zone-wrapper {
+        padding-bottom: 1rem;
+    }
+    .dropzone-section {
+        border: 1px solid black;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+
+    .dropzone {
+        border: 1px dashed blue;
+        padding: 20px;
+        margin: 10px 15px 10px;
+        text-align: center;
+      
+        
+    }
+
+    .tolerance-window {
         .switch-container {
             display: flex;
             align-items: center;
