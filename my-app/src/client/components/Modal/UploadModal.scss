@@ -1,0 +1,100 @@
+.modal {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    max-width: 50%;
+    border-radius: 1rem;
+
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .modal-title-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .modal-title {
+        border-bottom: 0.5px solid lightgray;
+        max-width: 65%;
+      }
+    }
+
+    .modal-close-btn {
+      background-color: #04046f;
+      color: white;
+      border: unset;
+      border-radius: 0.5rem;
+      padding: 10px;
+      min-width: 3%;
+      cursor: pointer;
+    }
+
+    .import-container {
+      min-width: 45%;
+    }
+
+    .modal-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3rem;
+      .modal-btn-wrapper {
+        padding-top: 1rem;
+        min-width: 50%;
+        .modal-btn-container {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.border,
+.border-right {
+  border: 0.5px solid lightgray;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  max-width: 65%;
+
+  &-right {
+    min-width: 100%;
+  }
+}
+
+.modal-btn,
+.modal-btn-cancel,
+.modal-btn-dropzone {
+  background-color: #04046f;
+  border: unset;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-right: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  &-cancel {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+  }
+
+  &-dropzone {
+    max-width: 50%;
+  }
+}

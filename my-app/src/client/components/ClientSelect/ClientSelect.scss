@@ -1,0 +1,44 @@
+.client-select-container {
+    .radio-container {
+        display: flex;
+    }
+    input {
+        margin-left: unset;
+    }
+    .green {
+        color: green;
+    }
+
+    .radio-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .radio-wrapper {
+        padding-right: .5rem;
+    }
+    .testing-center-container {
+        display: flex;
+
+        
+
+        .testing-center-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .testing-center-selects {
+                display: flex;
+                padding-bottom: 1rem;
+
+                > span {
+                    padding-right: 1rem;
+                }
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    
+}
